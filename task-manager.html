@@ -2353,7 +2353,7 @@ ${t('markdown.archiveSection')}
                     descriptionLines.push(line.trim());
                 }
             }
-            task.description = descriptionLines.join(' ').substring(0, 200);
+            task.description = descriptionLines.join('\r\n');
 
             // Parse subtasks
             const subtaskMatches = content.matchAll(/- \[(x| )\] (.+)/g);
